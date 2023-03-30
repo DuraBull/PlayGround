@@ -1,0 +1,54 @@
+.navigation
+    position: absolute
+    width: 100%
+    height: 200px
+    
+.nav-bar
+    position: absolute
+    display: flex
+    z-index: 5
+    width: 100%
+    height: 20vh
+    border-bottom: 1px solid black
+    background: white
+
+.nav-tab
+    height: 30px
+    width: 80px
+    background: white
+    position: absolute
+    display: flex
+    align-items: bottom
+    justify-content: center
+    border-bottom-left-radius: 5px
+    border-bottom-right-radius: 5px
+    border: 1px solid black
+    border-top: none
+    bottom: -31px
+    left: 0
+
+    &:hover
+        background: gray
+        cursor: pointer
+
+.tab-content
+    position: relative
+    z-index: 2
+    border-bottom: 1px solid black
+    height: 95vh
+    width: 100%
+    top: 0
+    left: 0
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: center
+    transform: translateY(-76vh)
+
+
+.is-open
+    transition-duration: 255ms
+    transform: translateY(0vh)
+
+    &:active
+        transition-duration: 255ms
